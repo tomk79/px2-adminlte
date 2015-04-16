@@ -149,12 +149,14 @@ class theme{
 		//   <li class="active">Dashboard</li>
 		// </ol>
 
+		$i = 0;
 		$rtn = '';
 		$rtn .= '<ol class="breadcrumb">';
 		foreach( $breadcrumb as $pid ){
-			$rtn .= '<li><a href="#"><i class="fa fa-dashboard"></i> '.$this->px->mk_link( $pid, array('label'=>$this->px->site()->get_page_info($pid, 'title_breadcrumb'), 'current'=>false) ).'</li>';
+			$rtn .= '<li>'.(!$i?'<i class="fa fa-dashboard"></i> ':'').$this->px->mk_link( $pid, array('label'=>$this->px->site()->get_page_info($pid, 'title_breadcrumb'), 'current'=>false) ).'</li>';
+			$i ++;
 		}
-		$rtn .= '<li class="active">'.htmlspecialchars( $this->px->site()->get_current_page_info('title_breadcrumb') ).'</li>';
+		$rtn .= '<li class="active">'.(!$i?'<i class="fa fa-dashboard"></i> ':'').htmlspecialchars( $this->px->site()->get_current_page_info('title_breadcrumb') ).'</li>';
 		$rtn .= '</ol>';
 		return $rtn;
 	}
