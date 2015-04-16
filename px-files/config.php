@@ -5,7 +5,7 @@ return call_user_func( function(){
 	$conf = new stdClass;
 
 	// project
-	$conf->name = 'Admin LTE'; // サイト名
+	$conf->name = 'Admin LTE * Px2'; // サイト名
 	$conf->domain = null; // ドメイン
 	$conf->path_controot = '/'; // コンテンツルートディレクトリ
 
@@ -155,7 +155,7 @@ return call_user_func( function(){
 	// config for Pickles2 Desktop Tool.
 	$conf->plugins->px2dt = new stdClass;
 	$conf->plugins->px2dt->paths_module_template = [
-		"FESS" => "./vendor/tomk79/fess/resources/px2dt_modules/"
+		"AdminLTE" => "./px-files/modules/"
 	];
 
 
