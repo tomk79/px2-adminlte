@@ -26,7 +26,9 @@ class theme{
 			$this->page['layout'] = 'default';
 		}
 		// $this->px->realpath_plugin_private_cache('/test/abc/test.inc');
-		$this->px->fs()->copy_r( __DIR__.'/../theme_files/', $this->px->realpath_plugin_files('/') );
+		if( !is_file( $this->px->realpath_plugin_files('/bootstrap/css/bootstrap.css') ) ){
+			$this->px->fs()->copy_r( __DIR__.'/../theme_files/', $this->px->realpath_plugin_files('/') );
+		}
 	}
 
 	/**
