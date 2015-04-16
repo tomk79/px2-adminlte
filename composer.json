@@ -12,7 +12,7 @@
     "repositories": [
     ],
     "require": {
-        "php": ">=5.3.0" ,
+        "php": ">=5.3.0"
     },
     "require-dev": {
         "tomk79/px-fw-2.x": "2.0.*",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "files": [
-            "px-files/themes/pickles/php/theme.php"
+            "px-files/themes/AdminLTE/php/theme.php"
         ]
     }
 }
