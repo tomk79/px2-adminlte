@@ -1,0 +1,60 @@
+{
+ "bowl": {
+  "main": {
+   "modId": "_sys/root",
+   "fields": {
+    "main": [
+     {
+      "modId": "AdminLTE:Grid/4columns",
+      "fields": {
+       "column1": [
+        {
+         "modId": "AdminLTE:Widgets/info-box",
+         "fields": {
+          "background": "bg-aqua",
+          "icon": "fa-star-o",
+          "Text": "テストテキスト",
+          "Number": "1,200"
+         }
+        }
+       ],
+       "column2": [
+        {
+         "modId": "AdminLTE:Widgets/info-box",
+         "fields": {
+          "background": "bg-red",
+          "icon": "fa-envelope-o",
+          "Text": "テスト",
+          "Number": "ああ"
+         }
+        }
+       ],
+       "column3": [
+        {
+         "modId": "AdminLTE:Widgets/info-box",
+         "fields": {
+          "background": "bg-aqua",
+          "icon": "fa-files-o",
+          "Text": "Test TEXT. Test TEXT.",
+          "Number": "12000"
+         }
+        }
+       ],
+       "column4": [
+        {
+         "modId": "AdminLTE:Widgets/info-box",
+         "fields": {
+          "background": "bg-yellow",
+          "icon": "fa-flag-o",
+          "Text": "おーーーー。",
+          "Number": "hoge, huga"
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
+ }
+}
