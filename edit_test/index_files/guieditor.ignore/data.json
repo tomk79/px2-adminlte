@@ -65,9 +65,11 @@
          "modId": "AdminLTE:Widgets/info-box",
          "fields": {
           "background": "bg-yellow",
-          "icon": "fa-flag-o",
-          "Text": "おーーーー。",
-          "Number": "hoge, huga"
+          "icon": "",
+          "Text": "NO ICON",
+          "Number": "hoge, huga",
+          "box-background": "",
+          "icon-background": ""
          }
         }
        ]
@@ -80,9 +82,78 @@
        "panel-background": "",
        "icon": "fa-star-o",
        "Text": "Star-O Icon",
-       "Number": "",
+       "Number": "1234567890",
        "box-background": "",
-       "icon-background": ""
+       "icon-background": "bg-yellow"
+      }
+     },
+     {
+      "modId": "AdminLTE:Widgets/info-box",
+      "fields": {
+       "box-background": "bg-green",
+       "icon-background": "",
+       "icon": "fa-files-o",
+       "Text": "テキスト",
+       "Number": "123"
+      }
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/Markdown",
+      "fields": {
+       "main": "## Buttons"
+      }
+     },
+     {
+      "modId": "AdminLTE:Grid/4columns",
+      "fields": {
+       "column1": [
+        {
+         "modId": "AdminLTE:Buttons/btn",
+         "fields": {
+          "box-background": "btn-default",
+          "label": "Primary Button",
+          "button-type": "btn-primary",
+          "button-size": "btn-lg",
+          "button-disabled": "",
+          "onclick": "alert('clicked');"
+         }
+        }
+       ],
+       "column2": [
+        {
+         "modId": "AdminLTE:Buttons/btn",
+         "fields": {
+          "label": "ボタン押してください",
+          "box-background": "btn-primary",
+          "button-type": "btn-success",
+          "button-size": "btn-flat",
+          "button-disabled": ""
+         }
+        }
+       ],
+       "column3": [
+        {
+         "modId": "AdminLTE:Buttons/btn",
+         "fields": {
+          "box-background": "btn-success",
+          "label": "小さいボタン(success)",
+          "button-type": "btn-success",
+          "button-size": "btn-xs",
+          "button-disabled": ""
+         }
+        }
+       ],
+       "column4": [
+        {
+         "modId": "AdminLTE:Buttons/btn",
+         "fields": {
+          "button-type": "btn-warning",
+          "button-size": "btn-sm",
+          "button-disabled": "disabled",
+          "label": "押せません"
+         }
+        }
+       ]
       }
      }
     ]
