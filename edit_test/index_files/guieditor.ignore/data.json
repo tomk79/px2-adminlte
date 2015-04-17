@@ -5,16 +5,31 @@
    "fields": {
     "main": [
      {
+      "modId": "PlainHTMLElements:PlainHTML/Markdown",
+      "fields": {
+       "main": "この画面は、Px2DTでの編集を試すためのテストページです。"
+      }
+     },
+     {
+      "modId": "PlainHTMLElements:PlainHTML/Markdown",
+      "fields": {
+       "main": "## Widgets"
+      }
+     },
+     {
       "modId": "AdminLTE:Grid/4columns",
       "fields": {
        "column1": [
         {
          "modId": "AdminLTE:Widgets/info-box",
          "fields": {
-          "background": "bg-aqua",
+          "background": "",
           "icon": "fa-star-o",
-          "Text": "テストテキスト",
-          "Number": "1,200"
+          "Text": "Info Box",
+          "Number": "1,200",
+          "panel-background": "bg-yellow",
+          "box-background": "bg-green",
+          "icon-background": ""
          }
         }
        ],
@@ -22,10 +37,13 @@
         {
          "modId": "AdminLTE:Widgets/info-box",
          "fields": {
-          "background": "bg-red",
+          "background": "",
           "icon": "fa-envelope-o",
-          "Text": "テスト",
-          "Number": "ああ"
+          "Text": "Info Box Sample",
+          "Number": "20,000",
+          "panel-background": "bg-red",
+          "box-background": "",
+          "icon-background": "bg-yellow"
          }
         }
        ],
@@ -36,7 +54,9 @@
           "background": "bg-aqua",
           "icon": "fa-files-o",
           "Text": "Test TEXT. Test TEXT.",
-          "Number": "12000"
+          "Number": "12000",
+          "box-background": "bg-aqua",
+          "icon-background": ""
          }
         }
        ],
@@ -51,6 +71,18 @@
          }
         }
        ]
+      }
+     },
+     {
+      "modId": "AdminLTE:Widgets/info-box",
+      "fields": {
+       "background": "",
+       "panel-background": "",
+       "icon": "fa-star-o",
+       "Text": "Star-O Icon",
+       "Number": "",
+       "box-background": "",
+       "icon-background": ""
       }
      }
     ]
